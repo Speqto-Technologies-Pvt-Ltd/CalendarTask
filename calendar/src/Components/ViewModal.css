@@ -1,0 +1,78 @@
+.modal-dialog {
+    min-width: 45%
+}
+
+.view-header>h4 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2D224C;
+}
+
+.view-header label, .view-header p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #2D224C;
+}
+
+.view-header-profile>img {
+    max-width: 72px;
+    max-height: 72px;
+    border-radius: 100%;
+}
+
+.view-header-profile>p {
+    color: #2D224C;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.view-body label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #2D224C;
+}
+
+.view-body p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #D4145A;
+}
+
+.view-button button {
+    background: #D4145A;
+    border-radius: 11px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.view-footer p {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #2D224C;
+}
+
+.view-footer a {
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: underline !important;
+    color: #2D224C;
+}
+
+.blue p {
+    color: #8065C9;
+}
+
+.pink p {
+    color: #D4145A;
+}
+
+.blueButton button {
+    background: #8065C9;
+}
+
+.pinkButton button {
+    background: #D4145A;
+}
