@@ -7,9 +7,36 @@
     gap: 20px;
 }
 
+.fc-header-toolbar>div:first-child {
+    width: 25%;
+}
+
+.fc-timezoneSelect-button {
+    background: #D9DAF3 !important;
+    border-radius: 7px !important;
+    color: #2D224C !important;
+    font-weight: 500 !important;
+}
+
+.fc-timezoneSelect-button>select {
+    background: #D9DAF3 !important;
+    border-radius: 7px !important;
+    color: #2D224C !important;
+    font-weight: 500 !important;
+    border: none !important;
+    outline: none !important;
+    cursor: pointer;
+    padding: 0;
+}
+
+.fc-timezoneSelect-button>select>option {
+    padding: 0.4em 0.65em;
+}
+
 .fc-button-group>button {
     background: none !important;
     border: none !important;
+    padding: 0.4em 0.65em;
 }
 
 .fc-today-button {
@@ -70,4 +97,52 @@
     align-items: center;
     justify-content: center;
     color: black;
+}
+
+.calendar-container {
+    min-height: 100vh;
+    background: #2D224C;
+    padding: 50px 200px;
+}
+
+.eventItem {
+    font-size: 0.8rem;
+    word-wrap: break-all;
+    word-break: break-all;
+}
+
+@media screen and (max-width: 1208px) {
+    .eventItem {
+        font-size: 0.8rem;
+    }
+
+    .fc-toolbar-title {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (min-device-width: 1208px) and (max-width: 1440px) {
+    .eventItem {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-device-width: 1440px) and (max-width: 1940px) {
+    .eventItem, .fc-daygrid-day-number, .fc-col-header-cell-cushion, .fc-today-button, .fc-timezoneSelect-button {
+        font-size: 1.2rem !important;
+    }
+
+    .fc-toolbar-title {
+        font-size: 2rem !important;
+    }
+}
+
+@media screen and (min-device-width: 1940px) {
+    .eventItem, .fc-daygrid-day-number, .fc-col-header-cell-cushion, .fc-today-button, .fc-timezoneSelect-button {
+        font-size: 1.6rem !important;
+    }
+
+    .fc-toolbar-title {
+        font-size: 2.5rem !important;
+    }
 }

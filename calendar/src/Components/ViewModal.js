@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 import Profile from '../assets/profilePic.png'
@@ -10,14 +9,12 @@ export default function ViewModal({ show, handleClose, eventData }) {
     const [isPast, setIsPast] = useState(false)
 
     useEffect(() => {
-        console.log(eventData, "event");
-        console.log(eventData?.event?._instance?.range?.start, eventData?.event?._instance?.range?.end);
 
         let startDateStamp = new Date(eventData?.event?._instance?.range?.start).getTime()
         let endDateStamp = new Date(eventData?.event?._instance?.range?.end).getTime()
 
         let nowDate = new Date().getTime()
-        console.log(nowDate, startDateStamp, endDateStamp);
+
         if (startDateStamp < nowDate) {
             setIsPast(true)
         } else {
@@ -28,9 +25,6 @@ export default function ViewModal({ show, handleClose, eventData }) {
 
     return (
         <Modal show={show} onHide={handleClose} centered>
-            {/* <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
-            </Modal.Header> */}
             <Modal.Body className='my-3 px-4'>
 
                 <div className='d-flex justify-content-between align-items-center'>
@@ -103,14 +97,6 @@ export default function ViewModal({ show, handleClose, eventData }) {
                 </div>
 
             </Modal.Body>
-            {/* <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                    Save Changes
-                </Button>
-            </Modal.Footer> */}
         </Modal>
     )
 }
