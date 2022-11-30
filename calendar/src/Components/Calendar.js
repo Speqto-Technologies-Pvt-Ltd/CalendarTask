@@ -12,6 +12,7 @@ import ViewModal from './ViewModal';
 const EventItem = ({ info }) => {
 
     const { event } = info;
+    // console.log(info);
 
     let isPast = !info.isFuture && !info.isToday;
 
@@ -76,10 +77,10 @@ export default function Calendar() {
     // AllEvents
     const eventList = [
         { title: 'event 1', start: '2022-11-10T14:30:00', allDay: false, end: '2022-11-10T15:30:00' },
-        { title: 'event 2', date: '2022-11-27T15:30:00', end: '2022-11-10T16:30:00' },
-        { title: 'event 3', date: '2022-11-29T16:30:00', end: '2022-11-10T17:30:00' },
-        { title: 'event 4', date: '2022-11-30T16:30:00', end: '2022-11-10T17:30:00' },
-        { title: 'event 4', date: '2022-12-01T16:30:00', end: '2022-11-10T17:30:00' }
+        { title: 'event 2', date: '2022-11-27T15:30:00', allDay: false, end: '2022-11-27T16:30:00' },
+        { title: 'event 3', date: '2022-11-29T16:30:00', allDay: false, end: '2022-11-29T18:00:00' },
+        { title: 'event 4', date: '2022-11-30T16:30:00', allDay: false, end: '2022-11-30T17:30:00' },
+        { title: 'event 4', date: '2022-12-01T16:30:00', allDay: false, end: '2022-12-01T17:00:00' }
     ]
 
     // Custom Button To Select TimeZone
